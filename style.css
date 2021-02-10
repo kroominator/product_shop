@@ -11,6 +11,32 @@ ol {
 a {
   text-decoration: none;
 }
+.productList article.soldOut img {
+  opacity: 0.5;
+}
+.productList article.soldOut::before {
+  content: "Sold out";
+  position: absolute;
+  background: var(--color);
+  color: var(--background-color);
+  padding: 1 rem;
+}
+/* default dont show class discount, dont show the span inside the price  */
+.productList article .discounted,
+.productList article .price span {
+  display: nones;
+}
+/* but when the product is on sale, grab the discounted and set it to be on flex */
+.productList article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* when the product is on sale show the span again, default value*/
+.productList article.onSale .price span {
+  display: initial;
+}
+
 .mainNav {
   font-family: "roboto", cursive;
   list-style: none;
