@@ -11,6 +11,15 @@ ol {
 a {
   text-decoration: none;
 }
+article,
+section {
+  /* margin: auto; */
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
 article.soldOut img {
   opacity: 0.5;
 }
@@ -22,8 +31,8 @@ article.soldOut::before {
   position: absolute;
   top: 0;
   right: 0;
-  background: blue;
-  color: green;
+  background: grey;
+  color: white;
   padding: 1rem;
 }
 /* default dont show class discount, dont show the span inside the price  */
@@ -135,15 +144,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
   }
-  article,
-  section {
-    margin: auto;
-    font-family: "Montserrat", sans-serif;
-  }
 
-  h1 {
-    font-family: "Montserrat", sans-serif;
-  }
   .mainNav {
     font-size: 1.2em;
   }
