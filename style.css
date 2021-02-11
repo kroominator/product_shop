@@ -11,29 +11,34 @@ ol {
 a {
   text-decoration: none;
 }
-.productList article.soldOut img {
+article.soldOut img {
   opacity: 0.5;
 }
-.productList article.soldOut::before {
+article.soldOut {
+  position: relative;
+}
+article.soldOut::before {
   content: "Sold out";
   position: absolute;
-  background: var(--color);
-  color: var(--background-color);
-  padding: 1 rem;
+  top: 0;
+  right: 0;
+  background: blue;
+  color: green;
+  padding: 1rem;
 }
 /* default dont show class discount, dont show the span inside the price  */
-.productList article .discounted,
-.productList article .price span {
+article .discounted,
+article .price span {
   display: nones;
 }
 /* but when the product is on sale, grab the discounted and set it to be on flex */
-.productList article.onSale .discounted {
+article.onSale .discounted {
   display: flex;
   justify-content: space-between;
 }
 
 /* when the product is on sale show the span again, default value*/
-.productList article.onSale .price span {
+article.onSale .price span {
   display: initial;
 }
 
