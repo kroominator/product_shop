@@ -11,6 +11,14 @@ ol {
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+}
+
+section.info {
+  text-align: center;
+}
 article,
 section {
   /* margin: auto; */
@@ -38,7 +46,7 @@ article.soldOut::before {
 /* default dont show class discount, dont show the span inside the price  */
 article .discounted,
 article .price span {
-  display: nones;
+  display: none;
 }
 /* but when the product is on sale, grab the discounted and set it to be on flex */
 article.onSale .discounted {
@@ -94,14 +102,16 @@ a:active {
 #wrapper {
   display: grid;
 }
-main {
+
+/* THIS ONE DELETED AT VALIDATION */
+/* main {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fill);
-}
+} */
 #main_list {
   display: grid;
-  grid-template-columns: 1f;
+  grid-template-columns: 1fr;
   grid-column: 1/-1;
 }
 main h1 {
@@ -117,10 +127,14 @@ h1 {
 }
 @media (min-width: 725px) and (max-width: 999px) {
   #main_list,
-  #product_type,
   #product_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+  }
+  #product_type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
   }
   .mainNav {
@@ -133,10 +147,15 @@ h1 {
     grid-column: 1/-1;
   }
   #main_list,
-  #product_type,
   #product_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/-1;
+  }
+  #product_type,
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
   }
   #product_wrapper {
