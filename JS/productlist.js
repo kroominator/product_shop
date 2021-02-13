@@ -12,6 +12,9 @@ fetch("https://kea-alt-del.dk/t7/api/products?limit=100")
     handleProductList(data);
   });
 
+function goback() {
+  window.history.back();
+}
 //   the function is gonna receive data, that one is simply gonna loop through some and all the products one at a time and call a function
 function handleProductList(data) {
   //   console.log(data);

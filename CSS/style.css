@@ -11,6 +11,14 @@ ol {
 a {
   text-decoration: none;
 }
+.exit_button {
+  background-size: 100%;
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top: 11%;
+  left: 80%;
+}
 
 ul {
   list-style: none;

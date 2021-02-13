@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <div id="wrapper3">
@@ -17,15 +17,16 @@
       </header>
       <h1>Categories</h1>
       <main id="product_type">
-        <ul>
-          <li><h2>Accessories</h2></li>
-          <li><h2>Apparel</h2></li>
-          <li><h2>Footwear</h2></li>
-          <li><h2>Free Items</h2></li>
-          <li><h2>Personal Care</h2></li>
-          <li><h2>Sporting Goods</h2></li>
-        </ul>
+        <template id="type_template">
+          <li><a href="product_list.html" class="category_link"></a></li>
+        </template>
+        <section id="Category_list">
+          <ul>
+            <li><h2 id="Accessories">Accessories</h2></li>
+          </ul>
+        </section>
       </main>
+      <script src="js/category.js"></script>
       <footer>footer</footer>
     </div>
   </body>
