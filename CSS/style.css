@@ -73,7 +73,6 @@ article.onSale .price span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid green;
   font-size: 0.9em;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 2em;
@@ -103,10 +102,10 @@ a:hover {
 a:active {
   color: white;
 }
-#wrapper,
+/* #wrapper,
 #wrapper2 > * {
   border: 1px solid black;
-}
+} */
 #wrapper {
   display: grid;
 }
