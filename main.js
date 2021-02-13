@@ -1,34 +1,3 @@
-// fetch("https://kea-alt-del.dk/t7/api/products/2801")
-//   .then(function (responce) {
-//     return responce.json();
-//   })
-
-// .then(function (data) {
-//   showProduct(data);
-// });
-
-// const urlParams = new URLSearchParams(window.location.search);
-
-// const productId = urlParams.get("id");
-
-// const url = "https://kea-alt-del.dk/t7/api/products/";
-// const urlParams = new URLSearchParams(window.location.search);
-// const id = urlParams.get("id");
-// console.log(id);
-
-// const url = "https://kea-alt-del.dk/t7/api/products/" + id;
-// // fetch the data
-// fetch(url)
-//   .then((res) => res.json())
-//   .then((data) => showProduct(data));
-// // const urlProduct = `https://kea-alt-del.dk/t7/api/products/${productId}`;
-
-// const url = "https://kea-alt-del.dk/t7/api/products/1530" + id;
-// // fetch the data
-// fetch(url)
-//   .then((res) => res.json())
-//   .then((data) => showProduct(data));
-
 const url = "https://kea-alt-del.dk/t7/api/products/";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -53,6 +22,7 @@ function showProduct(product) {
   document.querySelector(
     "img.productimg"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+  document.querySelector(".brand").textContent = product.brandname;
   document.querySelector(".brandbio").textContent = product.brandbio;
   document.querySelector(".category").textContent = product.category;
   document.querySelector(".subcategory").textContent = product.subcategory;
