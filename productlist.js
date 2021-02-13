@@ -1,4 +1,4 @@
-alert("Hello! I am an alert box!!");
+// alert("Hello! I am an alert box!!");
 
 // i wanna fetch the data and the data is located here
 // then we get a responce, from that responce we are gonna return the jason
@@ -56,7 +56,7 @@ function showProduct(product) {
     copy.querySelector(".discounted p").textContent =
       Math.floor(product.price - product.price * (product.discount / 100)) +
       "dkk";
-    copy.querySelector(".discount").textContent = product.discount + "%";
+    copy.querySelector(".discount").textContent = product.discount + "% OFF";
   }
   const aEl = copy.querySelector("a");
   aEl.href = "product.html?id=" + product.id;
@@ -65,4 +65,26 @@ function showProduct(product) {
   //   we gonna say parent, heres your new child and we are gonna call it copy
   parent.appendChild(copy);
   //append
+  function showProduct(product) {
+    console.log(product);
+    // document.querySelectorAll(".brand").forEach((item) => {
+    //   item.textContent = product.brandname;
+    // });
+    // document.querySelectorAll(".productname").forEach((item) => {
+    //   item.textContent = product.productdisplayname;  // });
+    document.querySelector(".productname").textContent =
+      product.productdisplayname;
+
+    document.querySelector(
+      "img.productimg"
+    ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
+    document.querySelector(".brand").textContent = product.brandname;
+    document.querySelector(".brandbio").textContent = product.brandbio;
+    document.querySelector(".category").textContent = product.category;
+    document.querySelector(".subcategory").textContent = product.subcategory;
+    document.querySelector(".idNo").textContent = product.id;
+    document.querySelector("img.productimg").alt = product.productdisplayname;
+    document.querySelector(".baseColour").textContent = product.basecolour;
+    document.querySelector(".price").textContent = product.price;
+  }
 }

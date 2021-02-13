@@ -3,6 +3,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+.discount {
+  margin-right: 30%;
+  top: 0;
+  right: 0;
+  background: #ff7f7f;
+  color: white;
+  padding: 0.2rem;
+}
 ol {
   list-style: none;
   display: flex;
@@ -25,8 +34,11 @@ ul {
 }
 
 section.info {
-  text-align: center;
+  margin: auto;
+  font-size: 0.8em;
+  margin-left: 13%;
 }
+
 article,
 section {
   /* margin: auto; */
@@ -73,10 +85,6 @@ article.onSale .price span {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-  /* border: 3px solid green; */
-=======
->>>>>>> eb46076ef6521215b3fa1f9b854b9614bb7d62b2
   font-size: 0.9em;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 2em;
@@ -114,12 +122,6 @@ a:active {
   display: grid;
 }
 
-/* THIS ONE DELETED AT VALIDATION */
-/* main {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill);
-} */
 #main_list {
   display: grid;
   grid-template-columns: 1fr;
@@ -128,13 +130,11 @@ a:active {
 main h1 {
   grid-column: 1/-1;
 }
-/* article {
-  background: hotpink;
-} */
 
 footer,
 h1 {
   text-align: center;
+  margin-top: 10%;
 }
 @media (min-width: 725px) and (max-width: 999px) {
   #main_list,
@@ -173,6 +173,11 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
+  }
+  section.info {
+    margin: auto;
+    font-size: 1em;
+    margin-left: 13%;
   }
 
   .mainNav {

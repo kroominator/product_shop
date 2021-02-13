@@ -11,7 +11,7 @@
       <header class="mainNav">
         <nav>
           <!-- <a href="product.html">Product</a> -->
-          <a href="index.html">Product list</a>
+          <a href="product_list.html">Product list</a>
           <a href="product_type.html">Categories</a>
         </nav>
       </header>
@@ -20,11 +20,9 @@
         <div id="product_wrapper">
           <img class="productimg" src="" alt="" />
           <section class="info">
-            <h2>Product Information</h2>
-            <input type="button" value="Back" onclick="goBack()" />
-            $
+            <h2 id="productinfo">Product Information</h2>
             <dl>
-              <h1>Nike</h1>
+              <h1 class="brand">Nike</h1>
               <p>
                 <span class="category"></span> |
                 <span class="subcategory">Tshirts</span>
@@ -54,6 +52,7 @@
                 <button>Add to basket</button>
               </form>
             </dl>
+            <button><a href="javascript:history.back()">Go Back</a></button>
           </section>
         </div>
       </main>
