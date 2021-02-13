@@ -28,7 +28,9 @@ a {
   top: 11%;
   left: 80%;
 }
-
+header {
+  background-color: #f5f5f5;
+}
 ul {
   list-style: none;
 }
@@ -144,6 +146,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
+    grid-gap: 0.5rem;
   }
   #product_type {
     display: grid;
@@ -164,6 +167,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column: 1/-1;
+    grid-gap: 0.5rem;
   }
   #product_type,
   ul {
