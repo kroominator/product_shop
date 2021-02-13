@@ -73,7 +73,10 @@ article.onSale .price span {
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   /* border: 3px solid green; */
+=======
+>>>>>>> eb46076ef6521215b3fa1f9b854b9614bb7d62b2
   font-size: 0.9em;
   font-family: "Roboto Mono", monospace;
   margin-bottom: 2em;

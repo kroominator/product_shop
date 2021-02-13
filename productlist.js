@@ -1,4 +1,4 @@
-// alert("Hello! I am an alert box!!");
+alert("Hello! I am an alert box!!");
 
 // i wanna fetch the data and the data is located here
 // then we get a responce, from that responce we are gonna return the jason
