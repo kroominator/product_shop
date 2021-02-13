@@ -134,6 +134,8 @@ main h1 {
 footer,
 h1 {
   text-align: center;
+}
+footer {
   margin-top: 10%;
 }
 @media (min-width: 725px) and (max-width: 999px) {

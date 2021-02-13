@@ -16,13 +16,12 @@ fetch("https://kea-alt-del.dk/t7/api//products?category=" + categoryname)
 // function gotData(data) {
 //   data.forEach(showCategory);
 // }
-
 function gotData(data) {
-  //console.log(data);
+  console.log(data);
   data.forEach(showCategory);
 }
 function showCategory(category) {
-  // console.log(category);
+  console.log(category);
   const template = document.querySelector("#type_template").content;
   const copy = template.cloneNode(true);
 
@@ -38,9 +37,9 @@ function showCategory(category) {
     "a.category_link"
   ).href = `product_list.html?categoryname=${category.category}`;
 
-  // const topParent = document.querySelector("#Category_list");
-  // const elemParent = topParent.querySelector("h2");
-  // elemParent.appendChild(copy);
+  const topParent = document.querySelector("#Category_list");
+  const elemParent = topParent.querySelector("h2");
+  elemParent.appendChild(copy);
 
   // grab the parent
   const daddy = document.querySelector("#Category_list");

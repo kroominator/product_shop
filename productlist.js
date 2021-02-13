@@ -42,6 +42,7 @@ function showProduct(product) {
 
   //select the h3 and set the textcontent to be equal to product display name
   copy.querySelector("h3").textContent = product.productdisplayname;
+  copy.querySelector(".brand").textContent = product.brandname;
   copy.querySelector(".price").textContent = product.price + " dkk";
   //sold out or on sale, if its true we are gonna grab the article(the wrapping ellement)
   //the we are gonna give it a classlist
